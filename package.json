@@ -1,0 +1,16 @@
+{
+  "name": "cosmo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jasimameen",
+  "license": "ISC",
+  "dependencies": {
+    "@cosmjs/stargate": "0.28.2",
+    "cosmjs-types": "0.4.1",
+    "express": "^4.18.2"
+  }
+}
