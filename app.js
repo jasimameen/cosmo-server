@@ -14,6 +14,10 @@ app.listen(port, () => {
     console.log(`API server listening on port ${port}`);
 });
 
+app.get('/', (req, res) => {
+    res.send("Welcome Leske.js, a cosmos server for basic wallet things hehe :)")
+})
+
 app.get('/createWallet', async (req, res) => {
     var wallet = await protoSign.DirectSecp256k1HdWallet.generate(24)
     var account = await wallet.getAccounts()
